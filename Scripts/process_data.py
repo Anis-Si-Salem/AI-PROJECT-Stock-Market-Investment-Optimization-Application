@@ -8,10 +8,11 @@ def fetch(stocks, start_date="2020-01-01", end_date="2025-01-01"):
         if not data.empty:
                
             os.makedirs("Data", exist_ok=True)
-            data.to_csv("Data/stocks.csv")
-
+            
             if isinstance(data.columns, pd.MultiIndex):
                data = data.xs('Close', level='Price', axis=1)  # remove useless columns leaves only the 'Close' column
+            
+            data.to_csv("Data/stocks.csv")
                
             return data
         else:
