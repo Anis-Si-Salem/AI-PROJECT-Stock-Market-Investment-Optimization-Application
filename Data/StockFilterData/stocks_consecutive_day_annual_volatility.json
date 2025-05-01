@@ -1,0 +1,402 @@
+[
+    {
+        "symbol": "AAPL",
+        "annual_volatility": 0.316415
+    },
+    {
+        "symbol": "ABNB",
+        "annual_volatility": 0.489411
+    },
+    {
+        "symbol": "ADBE",
+        "annual_volatility": 0.391598
+    },
+    {
+        "symbol": "ADI",
+        "annual_volatility": 0.354704
+    },
+    {
+        "symbol": "ADP",
+        "annual_volatility": 0.277972
+    },
+    {
+        "symbol": "ADSK",
+        "annual_volatility": 0.39381
+    },
+    {
+        "symbol": "AEP",
+        "annual_volatility": 0.248291
+    },
+    {
+        "symbol": "AMAT",
+        "annual_volatility": 0.469879
+    },
+    {
+        "symbol": "AMD",
+        "annual_volatility": 0.523581
+    },
+    {
+        "symbol": "AMGN",
+        "annual_volatility": 0.260716
+    },
+    {
+        "symbol": "AMZN",
+        "annual_volatility": 0.359445
+    },
+    {
+        "symbol": "ANSS",
+        "annual_volatility": 0.357637
+    },
+    {
+        "symbol": "ASML",
+        "annual_volatility": 0.436493
+    },
+    {
+        "symbol": "AVGO",
+        "annual_volatility": 0.416869
+    },
+    {
+        "symbol": "AXON",
+        "annual_volatility": 0.49116
+    },
+    {
+        "symbol": "AZN",
+        "annual_volatility": 0.263455
+    },
+    {
+        "symbol": "BIIB",
+        "annual_volatility": 0.439605
+    },
+    {
+        "symbol": "BKNG",
+        "annual_volatility": 0.372261
+    },
+    {
+        "symbol": "BKR",
+        "annual_volatility": 0.445338
+    },
+    {
+        "symbol": "CCEP",
+        "annual_volatility": 0.319623
+    },
+    {
+        "symbol": "CDNS",
+        "annual_volatility": 0.369542
+    },
+    {
+        "symbol": "CDW",
+        "annual_volatility": 0.330848
+    },
+    {
+        "symbol": "CEG",
+        "annual_volatility": 0.430341
+    },
+    {
+        "symbol": "CHTR",
+        "annual_volatility": 0.352883
+    },
+    {
+        "symbol": "CMCSA",
+        "annual_volatility": 0.286868
+    },
+    {
+        "symbol": "COST",
+        "annual_volatility": 0.241619
+    },
+    {
+        "symbol": "CPRT",
+        "annual_volatility": 0.305756
+    },
+    {
+        "symbol": "CRWD",
+        "annual_volatility": 0.548006
+    },
+    {
+        "symbol": "CSCO",
+        "annual_volatility": 0.274251
+    },
+    {
+        "symbol": "CSGP",
+        "annual_volatility": 0.354936
+    },
+    {
+        "symbol": "CSX",
+        "annual_volatility": 0.29326
+    },
+    {
+        "symbol": "CTAS",
+        "annual_volatility": 0.313316
+    },
+    {
+        "symbol": "CTSH",
+        "annual_volatility": 0.316997
+    },
+    {
+        "symbol": "DASH",
+        "annual_volatility": 0.604733
+    },
+    {
+        "symbol": "DDOG",
+        "annual_volatility": 0.587594
+    },
+    {
+        "symbol": "DLTR",
+        "annual_volatility": 0.40089
+    },
+    {
+        "symbol": "DXCM",
+        "annual_volatility": 0.512024
+    },
+    {
+        "symbol": "EA",
+        "annual_volatility": 0.260471
+    },
+    {
+        "symbol": "EXC",
+        "annual_volatility": 0.288924
+    },
+    {
+        "symbol": "FANG",
+        "annual_volatility": 0.610128
+    },
+    {
+        "symbol": "FAST",
+        "annual_volatility": 0.273599
+    },
+    {
+        "symbol": "FTNT",
+        "annual_volatility": 0.458332
+    },
+    {
+        "symbol": "GEHC",
+        "annual_volatility": 0.295858
+    },
+    {
+        "symbol": "GFS",
+        "annual_volatility": 0.494393
+    },
+    {
+        "symbol": "GILD",
+        "annual_volatility": 0.260743
+    },
+    {
+        "symbol": "GOOG",
+        "annual_volatility": 0.323989
+    },
+    {
+        "symbol": "GOOGL",
+        "annual_volatility": 0.325108
+    },
+    {
+        "symbol": "HON",
+        "annual_volatility": 0.271602
+    },
+    {
+        "symbol": "IDXX",
+        "annual_volatility": 0.346527
+    },
+    {
+        "symbol": "INTC",
+        "annual_volatility": 0.441993
+    },
+    {
+        "symbol": "INTU",
+        "annual_volatility": 0.375454
+    },
+    {
+        "symbol": "ISRG",
+        "annual_volatility": 0.355116
+    },
+    {
+        "symbol": "KDP",
+        "annual_volatility": 0.236977
+    },
+    {
+        "symbol": "KHC",
+        "annual_volatility": 0.270007
+    },
+    {
+        "symbol": "KLAC",
+        "annual_volatility": 0.46209
+    },
+    {
+        "symbol": "LRCX",
+        "annual_volatility": 0.488583
+    },
+    {
+        "symbol": "LULU",
+        "annual_volatility": 0.416817
+    },
+    {
+        "symbol": "MAR",
+        "annual_volatility": 0.394723
+    },
+    {
+        "symbol": "MCHP",
+        "annual_volatility": 0.445328
+    },
+    {
+        "symbol": "MDB",
+        "annual_volatility": 0.672555
+    },
+    {
+        "symbol": "MDLZ",
+        "annual_volatility": 0.22053
+    },
+    {
+        "symbol": "MELI",
+        "annual_volatility": 0.54054
+    },
+    {
+        "symbol": "META",
+        "annual_volatility": 0.453875
+    },
+    {
+        "symbol": "MNST",
+        "annual_volatility": 0.268052
+    },
+    {
+        "symbol": "MRVL",
+        "annual_volatility": 0.542158
+    },
+    {
+        "symbol": "MSFT",
+        "annual_volatility": 0.305111
+    },
+    {
+        "symbol": "MSTR",
+        "annual_volatility": 0.920486
+    },
+    {
+        "symbol": "MU",
+        "annual_volatility": 0.472426
+    },
+    {
+        "symbol": "NFLX",
+        "annual_volatility": 0.468521
+    },
+    {
+        "symbol": "NVDA",
+        "annual_volatility": 0.534955
+    },
+    {
+        "symbol": "NXPI",
+        "annual_volatility": 0.437253
+    },
+    {
+        "symbol": "ODFL",
+        "annual_volatility": 0.355369
+    },
+    {
+        "symbol": "ON",
+        "annual_volatility": 0.571079
+    },
+    {
+        "symbol": "ORLY",
+        "annual_volatility": 0.278422
+    },
+    {
+        "symbol": "PANW",
+        "annual_volatility": 0.425754
+    },
+    {
+        "symbol": "PAYX",
+        "annual_volatility": 0.296365
+    },
+    {
+        "symbol": "PCAR",
+        "annual_volatility": 0.27533
+    },
+    {
+        "symbol": "PDD",
+        "annual_volatility": 0.728585
+    },
+    {
+        "symbol": "PEP",
+        "annual_volatility": 0.220816
+    },
+    {
+        "symbol": "PLTR",
+        "annual_volatility": 0.701154
+    },
+    {
+        "symbol": "PYPL",
+        "annual_volatility": 0.452382
+    },
+    {
+        "symbol": "QCOM",
+        "annual_volatility": 0.414545
+    },
+    {
+        "symbol": "REGN",
+        "annual_volatility": 0.305949
+    },
+    {
+        "symbol": "ROP",
+        "annual_volatility": 0.257108
+    },
+    {
+        "symbol": "ROST",
+        "annual_volatility": 0.380913
+    },
+    {
+        "symbol": "SBUX",
+        "annual_volatility": 0.337332
+    },
+    {
+        "symbol": "SIRI",
+        "annual_volatility": 0.444104
+    },
+    {
+        "symbol": "SNPS",
+        "annual_volatility": 0.365362
+    },
+    {
+        "symbol": "TEAM",
+        "annual_volatility": 0.560912
+    },
+    {
+        "symbol": "TMUS",
+        "annual_volatility": 0.273591
+    },
+    {
+        "symbol": "TSLA",
+        "annual_volatility": 0.669725
+    },
+    {
+        "symbol": "TTD",
+        "annual_volatility": 0.67499
+    },
+    {
+        "symbol": "TTWO",
+        "annual_volatility": 0.346095
+    },
+    {
+        "symbol": "TXN",
+        "annual_volatility": 0.313071
+    },
+    {
+        "symbol": "VRSK",
+        "annual_volatility": 0.265478
+    },
+    {
+        "symbol": "VRTX",
+        "annual_volatility": 0.320705
+    },
+    {
+        "symbol": "WBD",
+        "annual_volatility": 0.550774
+    },
+    {
+        "symbol": "WDAY",
+        "annual_volatility": 0.405423
+    },
+    {
+        "symbol": "XEL",
+        "annual_volatility": 0.256873
+    },
+    {
+        "symbol": "ZS",
+        "annual_volatility": 0.582489
+    }
+]
