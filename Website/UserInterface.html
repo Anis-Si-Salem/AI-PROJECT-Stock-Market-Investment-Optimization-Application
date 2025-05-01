@@ -4,8 +4,107 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Interface</title>
+    <link rel="stylesheet" href="src/UserInterface.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+   
+
 </head>
 <body>
-    
+    <div class="sidebar">
+        <div class="logo">
+            <img src="public/LOGO.svg" alt="Logo" class="logoImage">
+            
+        </div>
+        <div class="choices">
+            <button class="nav-btn" onclick="showPage('preferences', event)">Preferences</button>
+            <button class="nav-btn" onclick="showPage('dashboard', event)">Dashboard</button>
+            <button class="nav-btn" onclick="showPage('portfolio', event)">Portfolio</button>
+        </div>
+    </div>
+    <div class="mainStuff">
+        <div class="preferences" id="preferences">
+            <div class="title">
+                <h1>Get an optimized investment strategy</h1>
+                <h3>enter your investment parameters and receive a suggested stock portfolio:</h3>
+            </div>
+            <div class="inputs">
+                <div class="capital">
+                    <label for="capital">Investment Capital:</label>
+                    <input id="capital" name="capital" placeholder="Enter amount in $">
+                </div>
+                <div class="risk">
+                    <label for="risk">Risk Tolerance:</label>
+                    <select id="risk" name="risk">
+                        <option value="conservative">Conservative</option>
+                        <option value="moderate">Moderate</option>
+                        <option value="aggressive">Aggressive</option>
+                    </select>
+                </div>
+                <div class="duration">
+                    <label for="duration">Investment Duration:</label>
+                    <div class="duration-options">
+                        <label>
+                            <input type="radio" id="short-term" name="duration" value="short-term">
+                            Short-term
+                        </label>
+                        <label>
+                            <input type="radio" id="long-term" name="duration" value="long-term">
+                            Long-term
+                        </label>
+                    </div>
+                </div>
+                <div class="industuryPref">
+                    <label for="industry">Industry Preference:</label>
+                    <select id="industry" name="industry">
+                        <option value="technology">Technology</option>
+                        <option value="healthcare">Healthcare</option>
+                        <option value="finance">Finance</option>
+                        <option value="energy">Energy</option>
+                        <option value="consumer-goods">Consumer Goods</option>
+                    </select>
+                </div>
+                <div style="display: flex; direction: rtl;"><button class="Enter">Enter</button></div>
+                
+            </div>
+        </div>
+        <div class="Dashboard" id="dashboard">
+            <div class="title">
+                <h1>Dashboard</h1>
+                <h3>Portfolio Overview:</h3>
+            </div>
+            <div class="overview">
+                <div class="value">
+                    <div style="display: flex; flex-direction: row; gap: 10px; align-items: center;">
+                        <img src="public/sack-dollar-solid.svg">
+                        <h3 style="font-size: 25px;">Portfolio Value:</h3>
+                    </div>
+                    <p id="portfolioValue" style="display:flex; justify-content: center;">$0</p>
+                </div>
+                <div class="expectedROI">
+                    <h3>Expected ROI:</h3>
+                    <p id="expectedROI">0%</p>
+                </div>
+                <div class="riskprofile">
+                    <h3>Risk Profile:</h3>
+                    <p id="riskProfile">Conservative</p>
+                </div>
+                <div class="stockbonds">
+                    <h3>Stocks vs Bonds:</h3>
+                    
+                </div>
+            </div>
+            <div class="title">
+                <h3>Stock Prices:</h3>
+                <h4>how stocks are performing in real-time</h4>
+            </div>
+        </div>
+        <div class="Portfolio" id="portfolio">
+
+        portfolio
+        </div>
+    </div>
 </body>
+<script type="module" src="src/UserInterface.js"></script>
 </html>

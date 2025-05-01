@@ -1,0 +1,191 @@
+* {
+    box-sizing: border-box;
+    font-family: 'Kufam', sans-serif;
+    font-size: 16px;
+    color: #545657;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: row;
+}
+.logo {
+    width: 100%;
+}
+.logo img{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.sidebar {
+    position: fixed;
+    width: 238px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    padding: 20px;
+    box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.1);
+    
+}
+.sidebar .choices {
+    gap: 34px;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0 15px 0 15px;
+    
+}
+.nav-btn {
+    padding: 15px 0 15px 0;
+    border-radius: 30px;
+    border: none;
+    background-color: #ffffff; 
+    font-weight: 600;
+    outline: none;
+}
+.nav-btn:hover {
+    background-color: #F5F5F5;
+    color: #F36016;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    outline: 2px solid #F36016;
+}
+.nav-btn.active {
+    background-color: #F5F5F5;
+    color: #F36016;
+    cursor: pointer;
+    outline: 2px solid #F36016;
+}
+.mainStuff {
+    margin-left: 238px;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+
+    padding: 40px;
+    gap: 20px;
+}
+.mainStuff .preferences .title h1{
+    font-size: 50px;
+    font-weight: 600;
+    margin: 0;
+}
+.mainStuff .preferences .title h3{
+    font-size: 20px;
+    font-weight: 100;
+}
+.mainStuff .preferences .inputs{
+    display: flex;
+    flex-direction: column;
+    padding: 1.5rem;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+}
+.mainStuff .preferences .capital input{
+    border: none;
+    border-radius: 20px;
+    background-color: #F5F5F5;
+    padding: 15px 10px 15px 10px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+    
+}
+.mainStuff .preferences .capital input:focus{
+    outline-color: #F36016;
+    outline-width: 2px;
+    outline-style: solid;
+}
+.mainStuff .preferences .risk select{
+    border: none;
+    border-radius: 20px;
+    background-color: #F5F5F5;
+    padding: 15px 10px 15px 10px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.mainStuff .preferences .risk select:focus{
+    outline-color: #F36016;
+    outline-width: 2px;
+    outline-style: solid;
+}   
+.mainStuff .preferences div{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+}
+.mainStuff .preferences .inputs{
+    gap: 40px;
+}
+.mainStuff .preferences .duration .duration-options{ 
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    width: 100%;
+    height: auto;
+}
+.mainStuff .preferences .duration .duration-options input[type="radio"] {
+    accent-color: #F36016;
+}
+.mainStuff .preferences .industuryPref select{
+    border: none;
+    border-radius: 20px;
+    background-color: #F5F5F5;
+    padding: 15px 10px 15px 10px;
+    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+}
+.mainStuff .preferences .industuryPref select:focus{
+    outline-color: #F36016;
+    outline-width: 2px;
+    outline-style: solid;
+}  
+.Enter{
+    border: none;
+    width: 100px;
+    background-color: #F36016;
+    color: #ffffff;
+    font-size: 21px;
+    border-radius: 30px;
+    padding: 15px 0px 15px 0px;
+}
+
+.mainStuff .Dashboard .title h1{
+    font-size: 50px;
+    font-weight: 600;
+    margin: 0;
+} 
+.mainStuff .Dashboard .title h3{
+    font-size: 40px;
+    font-weight: 400;
+}
+.mainStuff .Dashboard .title h4{
+    font-size: 30px;
+    font-weight: 100;
+}
+.mainStuff .Dashboard .overview{
+    margin: 20px 100px 20px 100px;
+    display: grid;
+    width: 50%;
+    height: 75%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 10px;
+}
+.mainStuff .Dashboard .overview > div {
+    background-color: #F5F5F5;
+    padding: 10px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+}
+.mainStuff .Dashboard .overview > div:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease, background-color 0.3s ease;
+}
+.mainStuff .Dashboard .overview img{
+    width: 30px;
+}
