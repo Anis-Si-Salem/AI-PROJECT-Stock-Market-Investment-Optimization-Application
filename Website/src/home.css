@@ -183,6 +183,44 @@ header ul li:hover::after {
     cursor: pointer;
   }
 
+  .Feedback {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 40px;
+  }
+  .testimonials {
+    display: flex;
+    justify-content: center;
+
+    gap: 30px;
+  }
+  .testimonial {
+    background: white;
+    border-radius: 10px;
+    padding: 20px;
+    width: 280px;
+  }
+  .testimonial img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 10px;
+  }
+  .stars {
+    color: orange;
+    font-size: 1.2rem;
+    margin: 10px 0;
+  }
+  .quote {
+    font-size: 0.9rem;
+    color: #555;
+  }
+
 
 
 
