@@ -222,5 +222,3 @@ def get_filtered_stocks(update=False):
         "top_long_term": get_top_long_term(df)
     }
     
-    
-sp_500()
