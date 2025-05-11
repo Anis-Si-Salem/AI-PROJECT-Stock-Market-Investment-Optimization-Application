@@ -1,0 +1,402 @@
+{
+    "AAPL": {
+        "expected_return": 0.001182,
+        "volatility": 0.019956
+    },
+    "ABNB": {
+        "expected_return": 0.00038,
+        "volatility": 0.030851
+    },
+    "ADBE": {
+        "expected_return": 0.000529,
+        "volatility": 0.02449
+    },
+    "ADI": {
+        "expected_return": 0.000774,
+        "volatility": 0.022314
+    },
+    "ADP": {
+        "expected_return": 0.000668,
+        "volatility": 0.017418
+    },
+    "ADSK": {
+        "expected_return": 0.000667,
+        "volatility": 0.024713
+    },
+    "AEP": {
+        "expected_return": 0.000256,
+        "volatility": 0.015628
+    },
+    "AMAT": {
+        "expected_return": 0.001238,
+        "volatility": 0.029435
+    },
+    "AMD": {
+        "expected_return": 0.001261,
+        "volatility": 0.033047
+    },
+    "AMGN": {
+        "expected_return": 0.000322,
+        "volatility": 0.016503
+    },
+    "AMZN": {
+        "expected_return": 0.000923,
+        "volatility": 0.022655
+    },
+    "ANSS": {
+        "expected_return": 0.000463,
+        "volatility": 0.022663
+    },
+    "ASML": {
+        "expected_return": 0.00107,
+        "volatility": 0.02737
+    },
+    "AVGO": {
+        "expected_return": 0.002029,
+        "volatility": 0.026389
+    },
+    "AXON": {
+        "expected_return": 0.002115,
+        "volatility": 0.031448
+    },
+    "AZN": {
+        "expected_return": 0.000443,
+        "volatility": 0.016552
+    },
+    "BIIB": {
+        "expected_return": -0.000124,
+        "volatility": 0.029405
+    },
+    "BKNG": {
+        "expected_return": 0.000977,
+        "volatility": 0.023496
+    },
+    "BKR": {
+        "expected_return": 0.000886,
+        "volatility": 0.028026
+    },
+    "CCEP": {
+        "expected_return": 0.000647,
+        "volatility": 0.020046
+    },
+    "CDNS": {
+        "expected_return": 0.001415,
+        "volatility": 0.02334
+    },
+    "CDW": {
+        "expected_return": 0.000413,
+        "volatility": 0.020668
+    },
+    "CEG": {
+        "expected_return": 0.002669,
+        "volatility": 0.027548
+    },
+    "CHTR": {
+        "expected_return": -3.9e-05,
+        "volatility": 0.022064
+    },
+    "CMCSA": {
+        "expected_return": 0.000111,
+        "volatility": 0.018047
+    },
+    "COST": {
+        "expected_return": 0.001095,
+        "volatility": 0.01521
+    },
+    "CPRT": {
+        "expected_return": 0.000901,
+        "volatility": 0.019285
+    },
+    "CRWD": {
+        "expected_return": 0.002136,
+        "volatility": 0.034503
+    },
+    "CSCO": {
+        "expected_return": 0.000427,
+        "volatility": 0.017187
+    },
+    "CSGP": {
+        "expected_return": 0.000364,
+        "volatility": 0.022441
+    },
+    "CSX": {
+        "expected_return": 0.000444,
+        "volatility": 0.018448
+    },
+    "CTAS": {
+        "expected_return": 0.000995,
+        "volatility": 0.019614
+    },
+    "CTSH": {
+        "expected_return": 0.00043,
+        "volatility": 0.019859
+    },
+    "DASH": {
+        "expected_return": 0.000607,
+        "volatility": 0.038203
+    },
+    "DDOG": {
+        "expected_return": 0.00177,
+        "volatility": 0.0373
+    },
+    "DLTR": {
+        "expected_return": 0.000138,
+        "volatility": 0.025018
+    },
+    "DXCM": {
+        "expected_return": 0.000782,
+        "volatility": 0.030959
+    },
+    "EA": {
+        "expected_return": 0.000399,
+        "volatility": 0.016386
+    },
+    "EXC": {
+        "expected_return": 0.000427,
+        "volatility": 0.018209
+    },
+    "FANG": {
+        "expected_return": 0.001345,
+        "volatility": 0.037142
+    },
+    "FAST": {
+        "expected_return": 0.000778,
+        "volatility": 0.01728
+    },
+    "FTNT": {
+        "expected_return": 0.001577,
+        "volatility": 0.028698
+    },
+    "GEHC": {
+        "expected_return": 0.000695,
+        "volatility": 0.018596
+    },
+    "GFS": {
+        "expected_return": 0.000389,
+        "volatility": 0.03135
+    },
+    "GILD": {
+        "expected_return": 0.000575,
+        "volatility": 0.016519
+    },
+    "GOOG": {
+        "expected_return": 0.001026,
+        "volatility": 0.020401
+    },
+    "GOOGL": {
+        "expected_return": 0.001022,
+        "volatility": 0.020472
+    },
+    "HON": {
+        "expected_return": 0.000406,
+        "volatility": 0.017113
+    },
+    "IDXX": {
+        "expected_return": 0.000592,
+        "volatility": 0.021826
+    },
+    "INTC": {
+        "expected_return": -0.0004,
+        "volatility": 0.027375
+    },
+    "INTU": {
+        "expected_return": 0.000989,
+        "volatility": 0.023692
+    },
+    "ISRG": {
+        "expected_return": 0.001017,
+        "volatility": 0.022389
+    },
+    "KDP": {
+        "expected_return": 0.000286,
+        "volatility": 0.015006
+    },
+    "KHC": {
+        "expected_return": 0.000303,
+        "volatility": 0.017055
+    },
+    "KLAC": {
+        "expected_return": 0.00146,
+        "volatility": 0.029145
+    },
+    "LRCX": {
+        "expected_return": 0.001211,
+        "volatility": 0.030721
+    },
+    "LULU": {
+        "expected_return": 0.000736,
+        "volatility": 0.026084
+    },
+    "MAR": {
+        "expected_return": 0.00082,
+        "volatility": 0.024975
+    },
+    "MCHP": {
+        "expected_return": 0.00051,
+        "volatility": 0.027973
+    },
+    "MDB": {
+        "expected_return": 0.001336,
+        "volatility": 0.042563
+    },
+    "MDLZ": {
+        "expected_return": 0.000265,
+        "volatility": 0.013892
+    },
+    "MELI": {
+        "expected_return": 0.001395,
+        "volatility": 0.034028
+    },
+    "META": {
+        "expected_return": 0.001225,
+        "volatility": 0.028284
+    },
+    "MNST": {
+        "expected_return": 0.000541,
+        "volatility": 0.016883
+    },
+    "MRVL": {
+        "expected_return": 0.001717,
+        "volatility": 0.034628
+    },
+    "MSFT": {
+        "expected_return": 0.000988,
+        "volatility": 0.019211
+    },
+    "MSTR": {
+        "expected_return": 0.004073,
+        "volatility": 0.058277
+    },
+    "MU": {
+        "expected_return": 0.000792,
+        "volatility": 0.029697
+    },
+    "NFLX": {
+        "expected_return": 0.001217,
+        "volatility": 0.028677
+    },
+    "NVDA": {
+        "expected_return": 0.00305,
+        "volatility": 0.03394
+    },
+    "NXPI": {
+        "expected_return": 0.000822,
+        "volatility": 0.027476
+    },
+    "ODFL": {
+        "expected_return": 0.001073,
+        "volatility": 0.022374
+    },
+    "ON": {
+        "expected_return": 0.001378,
+        "volatility": 0.035776
+    },
+    "ORLY": {
+        "expected_return": 0.000946,
+        "volatility": 0.017395
+    },
+    "PANW": {
+        "expected_return": 0.001577,
+        "volatility": 0.026454
+    },
+    "PAYX": {
+        "expected_return": 0.000685,
+        "volatility": 0.018559
+    },
+    "PCAR": {
+        "expected_return": 0.000834,
+        "volatility": 0.017416
+    },
+    "PDD": {
+        "expected_return": 0.001745,
+        "volatility": 0.046835
+    },
+    "PEP": {
+        "expected_return": 0.000301,
+        "volatility": 0.013876
+    },
+    "PLTR": {
+        "expected_return": 0.002931,
+        "volatility": 0.045144
+    },
+    "PYPL": {
+        "expected_return": 0.000196,
+        "volatility": 0.028232
+    },
+    "QCOM": {
+        "expected_return": 0.000866,
+        "volatility": 0.026142
+    },
+    "REGN": {
+        "expected_return": 0.0007,
+        "volatility": 0.019398
+    },
+    "ROP": {
+        "expected_return": 0.000434,
+        "volatility": 0.01613
+    },
+    "ROST": {
+        "expected_return": 0.000529,
+        "volatility": 0.023783
+    },
+    "SBUX": {
+        "expected_return": 0.000328,
+        "volatility": 0.0214
+    },
+    "SIRI": {
+        "expected_return": -0.000444,
+        "volatility": 0.028575
+    },
+    "SNPS": {
+        "expected_return": 0.001238,
+        "volatility": 0.02302
+    },
+    "TEAM": {
+        "expected_return": 0.001165,
+        "volatility": 0.035136
+    },
+    "TMUS": {
+        "expected_return": 0.000986,
+        "volatility": 0.017277
+    },
+    "TSLA": {
+        "expected_return": 0.002997,
+        "volatility": 0.04232
+    },
+    "TTD": {
+        "expected_return": 0.002077,
+        "volatility": 0.043134
+    },
+    "TTWO": {
+        "expected_return": 0.000564,
+        "volatility": 0.021709
+    },
+    "TXN": {
+        "expected_return": 0.000599,
+        "volatility": 0.019746
+    },
+    "VRSK": {
+        "expected_return": 0.000642,
+        "volatility": 0.016692
+    },
+    "VRTX": {
+        "expected_return": 0.000686,
+        "volatility": 0.019996
+    },
+    "WBD": {
+        "expected_return": -0.00029,
+        "volatility": 0.034264
+    },
+    "WDAY": {
+        "expected_return": 0.000671,
+        "volatility": 0.025645
+    },
+    "XEL": {
+        "expected_return": 0.000308,
+        "volatility": 0.016114
+    },
+    "ZS": {
+        "expected_return": 0.00174,
+        "volatility": 0.036944
+    }
+}
