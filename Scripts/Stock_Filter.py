@@ -34,9 +34,26 @@ def update_nasdaq_100():
     safe_json_dump(tickers, "Data/StockFilterData/nasdaq_100.json")
 
 
+def sp_500():
+    url = "https://raw.githubusercontent.com/datasets/s-and-p-500-companies/master/data/constituents.csv"
+    df = pd.read_csv(url)
+    tickers = df["Symbol"].head(150).tolist()
+    print(tickers)
+    with open("Data/StockFilterData/sp500_top150.json", "w") as f:
+        json.dump(tickers, f, indent=4)
+        
+
+
+
 def Stocks_Infos():
     with open("Data/StockFilterData/nasdaq_100.json") as f:
-        symbols = json.load(f)
+        nasdaq  = json.load(f)
+        
+    with open("Data/StockFilterData/p500_top150.json") as f:
+        sp150 = json.load(f)
+    
+    symbols= list(set(nasdaq  + sp150))
+    
     results = []
     for symbol in symbols:
         url = f"https://financialmodelingprep.com/api/v3/ratios-ttm/{symbol}?apikey={api_key}"
@@ -204,3 +221,4 @@ def get_filtered_stocks(update=False):
         "top_short_term": get_top_short_term(df),
         "top_long_term": get_top_long_term(df)
     }
+    

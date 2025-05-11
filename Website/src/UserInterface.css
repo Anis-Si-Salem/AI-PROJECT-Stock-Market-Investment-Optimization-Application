@@ -1,191 +1,432 @@
 * {
-    box-sizing: border-box;
-    font-family: 'Kufam', sans-serif;
-    font-size: 16px;
-    color: #545657;
+  box-sizing: border-box;
+  font-family: "Kufam", sans-serif;
+  font-size: 16px;
+  color: #545657;
 }
 
 body {
-    margin: 0;
-    padding: 0;
-    display: flex;
-    flex-direction: row;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row;
 }
+
 .logo {
-    width: 100%;
+  width: 100%;
 }
-.logo img{
-    width: 100%;
-    height: 100px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+
+.logo img {
+  width: 100%;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
 .sidebar {
-    position: fixed;
-    width: 238px;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    gap: 100px;
-    padding: 20px;
-    box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.1);
-    
+  position: fixed;
+  width: 238px;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  gap: 100px;
+  padding: 20px;
+  box-shadow: 0px 10px 8px 0px rgba(0, 0, 0, 0.1);
 }
+
 .sidebar .choices {
-    gap: 34px;
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    padding: 0 15px 0 15px;
-    
+  gap: 34px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  padding: 0 15px 0 15px;
 }
+
 .nav-btn {
-    padding: 15px 0 15px 0;
-    border-radius: 30px;
-    border: none;
-    background-color: #ffffff; 
-    font-weight: 600;
-    outline: none;
+  padding: 15px 0 15px 0;
+  border-radius: 30px;
+  border: none;
+  background-color: #ffffff;
+  font-weight: 600;
+  outline: none;
 }
+
 .nav-btn:hover {
-    background-color: #F5F5F5;
-    color: #F36016;
-    cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
-    outline: 2px solid #F36016;
+  background-color: #f5f5f5;
+  color: #f36016;
+  cursor: pointer;
+  transition: background-color 0.3s ease, color 0.3s ease;
+  outline: 2px solid #f36016;
 }
+
 .nav-btn.active {
-    background-color: #F5F5F5;
-    color: #F36016;
-    cursor: pointer;
-    outline: 2px solid #F36016;
+  background-color: #f5f5f5;
+  color: #f36016;
+  cursor: pointer;
+  outline: 2px solid #f36016;
 }
+
 .mainStuff {
-    margin-left: 238px;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
+  margin-left: 238px;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  padding: 40px;
+  gap: 20px;
+}
 
-    padding: 40px;
-    gap: 20px;
+.mainStuff .preferences .title h1 {
+  font-size: 50px;
+  font-weight: 600;
+  margin: 0;
 }
-.mainStuff .preferences .title h1{
-    font-size: 50px;
-    font-weight: 600;
-    margin: 0;
+
+.mainStuff .preferences .title h3 {
+  font-size: 20px;
+  font-weight: 100;
 }
-.mainStuff .preferences .title h3{
-    font-size: 20px;
-    font-weight: 100;
+
+.mainStuff .preferences .inputs {
+  display: flex;
+  flex-direction: column;
+  padding: 1.5rem;
+  gap: 20px;
+  width: 100%;
+  height: auto;
 }
-.mainStuff .preferences .inputs{
-    display: flex;
-    flex-direction: column;
-    padding: 1.5rem;
-    gap: 20px;
-    width: 100%;
-    height: auto;
+
+.mainStuff .preferences .capital input {
+  border: none;
+  border-radius: 20px;
+  background-color: #f5f5f5;
+  padding: 15px 10px 15px 10px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
 }
-.mainStuff .preferences .capital input{
-    border: none;
-    border-radius: 20px;
-    background-color: #F5F5F5;
-    padding: 15px 10px 15px 10px;
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
-    
+
+.mainStuff .preferences .capital input:focus {
+  outline-color: #f36016;
+  outline-width: 2px;
+  outline-style: solid;
 }
-.mainStuff .preferences .capital input:focus{
-    outline-color: #F36016;
-    outline-width: 2px;
-    outline-style: solid;
+
+.mainStuff .preferences .risk select {
+  border: none;
+  border-radius: 20px;
+  background-color: #f5f5f5;
+  padding: 15px 10px 15px 10px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
 }
-.mainStuff .preferences .risk select{
-    border: none;
-    border-radius: 20px;
-    background-color: #F5F5F5;
-    padding: 15px 10px 15px 10px;
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
+
+.mainStuff .preferences .risk select:focus {
+  outline-color: #f36016;
+  outline-width: 2px;
+  outline-style: solid;
 }
-.mainStuff .preferences .risk select:focus{
-    outline-color: #F36016;
-    outline-width: 2px;
-    outline-style: solid;
-}   
-.mainStuff .preferences div{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 100%;
-    height: auto;
+
+.mainStuff .preferences div {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+  height: auto;
 }
-.mainStuff .preferences .inputs{
-    gap: 40px;
+
+.mainStuff .preferences .inputs {
+  gap: 40px;
 }
-.mainStuff .preferences .duration .duration-options{ 
-    display: flex;
-    flex-direction: row;
-    gap: 20px;
-    width: 100%;
-    height: auto;
+
+.mainStuff .preferences .duration .duration-options {
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  width: 100%;
+  height: auto;
 }
+
 .mainStuff .preferences .duration .duration-options input[type="radio"] {
-    accent-color: #F36016;
-}
-.mainStuff .preferences .industuryPref select{
-    border: none;
-    border-radius: 20px;
-    background-color: #F5F5F5;
-    padding: 15px 10px 15px 10px;
-    box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
-}
-.mainStuff .preferences .industuryPref select:focus{
-    outline-color: #F36016;
-    outline-width: 2px;
-    outline-style: solid;
-}  
-.Enter{
-    border: none;
-    width: 100px;
-    background-color: #F36016;
-    color: #ffffff;
-    font-size: 21px;
-    border-radius: 30px;
-    padding: 15px 0px 15px 0px;
+  accent-color: #f36016;
 }
 
-.mainStuff .Dashboard .title h1{
-    font-size: 50px;
-    font-weight: 600;
-    margin: 0;
-} 
-.mainStuff .Dashboard .title h3{
-    font-size: 40px;
-    font-weight: 400;
+.mainStuff .preferences .industuryPref select {
+  border: none;
+  border-radius: 20px;
+  background-color: #f5f5f5;
+  padding: 15px 10px 15px 10px;
+  box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.1);
 }
-.mainStuff .Dashboard .title h4{
-    font-size: 30px;
-    font-weight: 100;
+
+.mainStuff .preferences .industuryPref select:focus {
+  outline-color: #f36016;
+  outline-width: 2px;
+  outline-style: solid;
 }
-.mainStuff .Dashboard .overview{
-    margin: 20px 100px 20px 100px;
-    display: grid;
-    width: 50%;
-    height: 75%;
-    grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;
-    gap: 10px;
+
+.Enter {
+  border: none;
+  width: 100px;
+  background-color: #f36016;
+  color: #ffffff;
+  font-size: 21px;
+  border-radius: 30px;
+  padding: 15px 0px 15px 0px;
 }
+
+.mainStuff .Dashboard .title h1 {
+  font-size: 50px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.mainStuff .Dashboard .title h3 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.mainStuff .Dashboard .title h4 {
+  font-size: 30px;
+  font-weight: 400;
+}
+
+.mainStuff .Dashboard .overview {
+  margin: 20px 100px 20px 100px;
+  display: grid;
+  width: 50%;
+  height: 40%;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px;
+}
+
 .mainStuff .Dashboard .overview > div {
-    background-color: #F5F5F5;
-    padding: 10px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #f5f5f5;
+  padding: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
 }
+
 .mainStuff .Dashboard .overview > div:hover {
-    transform: scale(1.05);
-    transition: transform 0.3s ease, background-color 0.3s ease;
+  transform: scale(1.05);
+  transition: transform 0.3s ease, background-color 0.3s ease;
 }
-.mainStuff .Dashboard .overview img{
-    width: 30px;
+
+.mainStuff .Dashboard .overview img {
+  width: 30px;
+}
+
+.mainStuff .Dashboard .table {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  width: 100%;
+}
+
+.mainStuff .Dashboard .table table {
+  border-collapse: collapse;
+  margin: 20px 0 20px 0;
+  border: #545657 1px solid;
+  border-spacing: 0 10px;
+  width: 70%;
+}
+
+.mainStuff .Dashboard .table table td,
+.mainStuff .Dashboard .table table th {
+  border: 2px solid #d9d9d9;
+  padding: 10px;
+  text-align: center;
+  font-size: 18px;
+}
+
+.mainStuff .Dashboard .table table tr:not(:last-child) td {
+  border-bottom: 2px solid #d9d9d9;
+}
+
+.mainStuff .Portfolio .title h1 {
+  font-size: 50px;
+  font-weight: 600;
+  margin: 0;
+}
+
+.mainStuff .Portfolio .title h3 {
+  font-size: 40px;
+  font-weight: 400;
+}
+
+.Portfolio table {
+  border-collapse: collapse;
+  width: 100%;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.Portfolio thead {
+  background-color: #f8f8f8;
+}
+
+.Portfolio th,
+td {
+  text-align: center;
+  padding: 16px 20px;
+  font-size: 16px;
+  color: #333;
+}
+
+.Portfolio th {
+  font-weight: bold;
+}
+
+.Portfolio tbody tr {
+  background-color: #fff;
+  border-top: 1px solid #eee;
+}
+
+.Portfolio tbody tr:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.Portfolio tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.Portfolio td:nth-child(3),
+td:nth-child(4) {
+  text-align: center;
+}
+
+.Portfolio td {
+  font-style: italic;
+}
+
+.Portfolio tbody td:first-child,
+.Portfolio tbody td:nth-child(2) {
+  font-style: italic;
+}
+
+.Portfolio .table-container {
+  padding: 20px;
+  background-color: #fdfdfd;
+  border-radius: 16px;
+  max-width: 100%;
+}
+
+#title2 {
+  margin-top: 8rem;
+}
+
+.Portfolio .carousel-container {
+  text-align: center;
+  position: relative;
+  padding: 2rem;
+}
+
+.Portfolio .carousel {
+  display: flex;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.Portfolio .card {
+  background: #f7f7f7;
+  padding: 1rem;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  min-width: 120px;
+  transition: 0.3s;
+}
+
+.Portfolio .card h3 {
+  font-weight: 500;
+  color: #444;
+}
+
+.Portfolio .card .action {
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: #f36016;
+  margin: 0.5rem 0;
+}
+
+.Portfolio .card .percent {
+  font-size: 1.2rem;
+  color: #f36016;
+}
+
+.Portfolio .week-label {
+  display: inline-block;
+  background: #f36016;
+  color: white;
+  padding: 0.7rem 1.5rem;
+  border-radius: 25px;
+  box-shadow: 0 8px 15px rgba(212, 102, 26, 0.3);
+  font-size: 1.2rem;
+}
+
+.Portfolio .pagination {
+  margin-top: 1rem;
+}
+
+.Portfolio .dot {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  margin: 0 5px;
+  background: #bbb;
+  border-radius: 50%;
+  transition: background 0.3s;
+}
+
+.Portfolio .dot.active {
+  background: #f36016;
+}
+
+.Portfolio .nav {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1.8rem;
+  background: transparent;
+  border: 3px solid gray;
+  color: gray;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+}
+
+.Portfolio .nav.left {
+  left: 10px;
+}
+
+.Portfolio .nav.right {
+  right: 10px;
+}
+
+.Portfolio .carousel.fade-in {
+  animation: PortfolioFadeIn 0.5s ease;
+}
+
+@keyframes PortfolioFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.Portfolio .dot.active {
+  background-color: #f36016;
+}
+.Portfolio .nav {
+  color: #f36016;
+  border: 2px solid #f36016;
+}
+
+.Portfolio .nav:hover {
+  background-color: #f36016;
+  color: #fff;
 }

@@ -1,38 +1,47 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interface</title>
-    <link rel="stylesheet" href="src/UserInterface.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-   
 
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Interface</title>
+    <link rel="stylesheet" href="src/UserInterface.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Kufam:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet" />
 </head>
+
 <body>
     <div class="sidebar">
         <div class="logo">
-            <img src="public/LOGO.svg" alt="Logo" class="logoImage">
-            
+            <img src="public/LOGO.svg" alt="Logo" class="logoImage" />
         </div>
         <div class="choices">
-            <button class="nav-btn" onclick="showPage('preferences', event)">Preferences</button>
-            <button class="nav-btn" onclick="showPage('dashboard', event)">Dashboard</button>
-            <button class="nav-btn" onclick="showPage('portfolio', event)">Portfolio</button>
+            <button class="nav-btn" onclick="showPage('preferences', event)">
+                Preferences
+            </button>
+            <button class="nav-btn" onclick="showPage('dashboard', event)">
+                Dashboard
+            </button>
+            <button class="nav-btn" onclick="showPage('portfolio', event)">
+                Portfolio
+            </button>
         </div>
     </div>
     <div class="mainStuff">
         <div class="preferences" id="preferences">
             <div class="title">
                 <h1>Get an optimized investment strategy</h1>
-                <h3>enter your investment parameters and receive a suggested stock portfolio:</h3>
+                <h3>
+                    enter your investment parameters and receive a suggested stock
+                    portfolio:
+                </h3>
             </div>
             <div class="inputs">
                 <div class="capital">
                     <label for="capital">Investment Capital:</label>
-                    <input id="capital" name="capital" placeholder="Enter amount in $">
+                    <input id="capital" name="capital" placeholder="Enter amount in $" />
                 </div>
                 <div class="risk">
                     <label for="risk">Risk Tolerance:</label>
@@ -46,11 +55,11 @@
                     <label for="duration">Investment Duration:</label>
                     <div class="duration-options">
                         <label>
-                            <input type="radio" id="short-term" name="duration" value="short-term">
+                            <input type="radio" id="short-term" name="duration" value="short-term" />
                             Short-term
                         </label>
                         <label>
-                            <input type="radio" id="long-term" name="duration" value="long-term">
+                            <input type="radio" id="long-term" name="duration" value="long-term" />
                             Long-term
                         </label>
                     </div>
@@ -65,8 +74,9 @@
                         <option value="consumer-goods">Consumer Goods</option>
                     </select>
                 </div>
-                <div style="display: flex; direction: rtl;"><button class="Enter">Enter</button></div>
-                
+                <div style="display: flex; direction: rtl">
+                    <button class="Enter">Enter</button>
+                </div>
             </div>
         </div>
         <div class="Dashboard" id="dashboard">
@@ -76,35 +86,166 @@
             </div>
             <div class="overview">
                 <div class="value">
-                    <div style="display: flex; flex-direction: row; gap: 10px; align-items: center;">
-                        <img src="public/sack-dollar-solid.svg">
-                        <h3 style="font-size: 25px;">Portfolio Value:</h3>
+                    <div style="
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                justify-content: center;
+              ">
+                        <h3 style="font-size: 16px; align-self: center;">Portfolio Value:</h3>
                     </div>
-                    <p id="portfolioValue" style="display:flex; justify-content: center;">$0</p>
+                    <p id="portfolioValue" style="display: flex; justify-content: center">
+                        $0
+                    </p>
                 </div>
                 <div class="expectedROI">
-                    <h3>Expected ROI:</h3>
-                    <p id="expectedROI">0%</p>
+                    <div style="
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                justify-content: center;
+              ">
+                        <h3 style="font-size: 16px; align-self: center;">Expected ROI:</h3>
+                    </div>
+                    <p id="expectedROI" style="display: flex; justify-content: center">
+                        0%
+                    </p>
                 </div>
                 <div class="riskprofile">
-                    <h3>Risk Profile:</h3>
-                    <p id="riskProfile">Conservative</p>
-                </div>
-                <div class="stockbonds">
-                    <h3>Stocks vs Bonds:</h3>
-                    
+                    <div style="
+                display: flex;
+                flex-direction: row;
+                gap: 10px;
+                justify-content: center;
+              ">
+                        <h3 style="font-size: 16px; align-self: center;">Risk Profile:</h3>
+                    </div>
+                    <p id="riskProfile" style="display: flex; justify-content: center">
+                        Conservative
+                    </p>
                 </div>
             </div>
             <div class="title">
                 <h3>Stock Prices:</h3>
-                <h4>how stocks are performing in real-time</h4>
+                <h4>how stocks are performing in real-time:</h4>
+            </div>
+
+            <div class="table">
+                <table id="stockTable">
+                    <thead>
+                        <tr>
+                            <th>Stock Name</th>
+                            <th>Price</th>
+                            <th>Daily Change</th>
+                            <th>Investment amount</th>
+                        </tr>
+                    </thead>
+                    <tbody id="stockTableBody">
+                        <!-- placeholder data -->
+                        <tr>
+                            <td>Apple(AAPL)</td>
+                            <td>$165.00</td>
+                            <td>+1.5%</td>
+                            <td>$3500</td>
+                        </tr>
+                    </tbody>
+                </table>
             </div>
         </div>
         <div class="Portfolio" id="portfolio">
-
-        portfolio
+            <div class="title">
+                <h1>Portfolio Distrobution</h1>
+                <h3>See how your total budget is currently allocated among different stocks:</h3>
+            </div>
+            <div class="table">
+                <table id="portfolioTable">
+                    <thead>
+                        <tr>
+                            <th>Stock</th>
+                            <th>Company Name</th>
+                            <th>Amount Invested</th>
+                            <th>Percentage in Portfolio</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>AAPL</td>
+                            <td>Apple Inc.</td>
+                            <td>$5000</td>
+                            <td>25%</td>
+                        </tr>
+                        <tr>
+                            <td>GOOGL</td>
+                            <td>Alphabet Inc.</td>
+                            <td>$3000</td>
+                            <td>15%</td>
+                        </tr>
+                        <tr>
+                            <td>AMZN</td>
+                            <td>Amazon.com Inc.</td>
+                            <td>$7000</td>
+                            <td>35%</td>
+                        </tr>
+                        <tr>
+                            <td>MSFT</td>
+                            <td>Microsoft Corp.</td>
+                            <td>$4000</td>
+                            <td>20%</td>
+                        </tr>
+                        <tr>
+                            <td>TSLA</td>
+                            <td>Tesla Inc.</td>
+                            <td>$1000</td>
+                            <td>5%</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="title" id="title2">
+                <h1>What to do this week</h1>
+                <h3>here is your recomended actions for this time period:</h3>
+            </div>
+            <div class="carousel-container">
+                <button class="nav left">&lt;</button>
+              
+                <div class="carousel">
+                  <div class="card">
+                    <h3>AAPL</h3>
+                    <p class="action buy">Buy</p>
+                    <p class="percent">30%</p>
+                  </div>
+                  <div class="card">
+                    <h3>TSLA</h3>
+                    <p class="action sell">Sell</p>
+                    <p class="percent">10%</p>
+                  </div>
+                  <div class="card">
+                    <h3>AMZN</h3>
+                    <p class="action hold">Hold</p>
+                    <p class="percent">30%</p>
+                  </div>
+                  <div class="card">
+                    <h3>GOOGL</h3>
+                    <p class="action buy">Buy</p>
+                    <p class="percent">10%</p>
+                  </div>
+                  <div class="card">
+                    <h3>MSFT</h3>
+                    <p class="action hold">Hold</p>
+                    <p class="percent">10%</p>
+                  </div>
+                </div>
+              
+                <button class="nav right">&gt;</button>
+              
+                <div class="week-label">week 1 <span>April 2025</span></div>
+              
+                <div class="pagination">
+                </div>
+              </div>
         </div>
     </div>
 </body>
 <script type="module" src="src/UserInterface.js"></script>
+
 </html>
