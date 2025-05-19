@@ -59,7 +59,18 @@ const executeTradingSimulation = async (capital, years, months, customStocks = [
       years,
       months
     );
-    
+    /*
+    eg
+    the simulationResults = {
+    totalValue :  totalValue  ,
+    actions : 
+    [{action : "buy"or "sell",
+     frame : 0 index of days start day +i = current action day ,
+     symbol 
+     value
+     }]
+    }
+    */
     return {
       success: true,
       periodType: period,
