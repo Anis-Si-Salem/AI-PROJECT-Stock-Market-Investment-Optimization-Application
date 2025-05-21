@@ -5,10 +5,10 @@ import MaxHeap from "./MaxHeap";
 import getStockData from "./get_stock_data";
 import aStarSearch from "./a_star";
 import expand from "./expand";
+import { getPath , evaluate } from "./eval";
 async function search(stocks, startDate, endDate) {
-  // Fetch stock data (assuming getStockData is an async function)
-  console.log(stocks)
-  const T = await getStockData(stocks, startDate, endDate);
+
+  const T = await getStockData(stocks, startDate, endDate  );
   console.log("This is the stock data:", T);
 
   // Find minimum length of prices array across all stocks
@@ -98,7 +98,8 @@ async function runSimulation(
     }, {});
     
     // Modified adapter call that uses expand with correct parameters
-    const expanded = expand(frames[i] ,1, portfolio, constraints);
+    const expanded = expand(frames[i] ,1, portfolio, {});
+    console.log(expanded)
     const nodes = setNodes(expanded, historyHeuristic, shortTerm);
     const bestNode = aStarSearch(nodes[0], lastStock, portfolio, frames[i]);
     applyActs(getPath(bestNode).slice(1), portfolio , i);

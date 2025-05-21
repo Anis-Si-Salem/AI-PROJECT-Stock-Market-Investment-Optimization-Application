@@ -9,24 +9,28 @@
  * @param {number} [limit=0.2] - Allocation threshold percentage (default 20%)
  * @returns {Array<{id: string, hold: number, buy?: number, sell?: number}>} List of actions
  */
-function expand(stocks, mainstock, portfolio, limit = 0.2) {
+function expand(stocks, mainstock, portfolio) {
   return stocks.map(stock => {
-    const action = { 
-      id: stock.id, 
+    let action = { 
+      symbol: stock.symbol, 
       hold: 0  // Default hold action
     };
     
     // Check if stock is already in portfolio
-    if (portfolio.hasStock(stock.id)) {
+    if (portfolio.hasStock(stock.symbol)) {
       action.sell = stock.price;  // Add sell option at current price
     }
-    
-    // Check if under allocation limit and has sufficient funds
-    const currentAllocation = portfolio.getPercentage(stock.id) || 0;
-    if (currentAllocation < limit && portfolio.getFunds() >= stock.price) {
-      action.buy = -stock.price;  // Add buy option (negative for cost)
-    }
-    
+  const limit = parseFloat(0.2)
+ const currentAllocation = parseFloat(portfolio.percentage(stock.symbol)) || 0;
+const funds = parseFloat(portfolio.getFunds()) || 0;
+const price = parseFloat(stock.price) || 0;
+
+console.log(currentAllocation, funds, price , currentAllocation < limit ,  funds >= price);
+
+if ((currentAllocation < limit || currentAllocation == 0) && funds >= price) {
+  console.log('hi i passed')
+  action["buy"] = -price;
+}
     return action;
   });
 }

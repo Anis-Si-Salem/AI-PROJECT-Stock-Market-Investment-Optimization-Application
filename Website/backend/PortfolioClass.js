@@ -76,7 +76,7 @@ class Stocks {
         if (!found) {
             this.stocks.push(new StockItem(stock));
         }
-        act = {
+        let act = {
             symbol : stock,
             action : "buy",
             value : price,
@@ -105,7 +105,7 @@ class Stocks {
                 if (item.amt === 0) {
                     this.stocks.splice(i, 1);
                 }
-                act = {
+              let   act = {
                 symbol : stock,
                 action : "sell",
                 value : price,

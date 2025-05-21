@@ -50,7 +50,7 @@ const executeTradingSimulation = async (capital, years, months, customStocks = [
   const period = getInvestmentPeriod(years, months);
   const stocks = customStocks.length > 0 
     ? customStocks 
-    : selectStocks(period);
+    : selectStocks(period , 1);
   
   try {
     const simulationResults = await runSimulation(
@@ -94,7 +94,7 @@ const executeTradingSimulation = async (capital, years, months, customStocks = [
     console.log('Auto-selected simulation:', autoResults);
     
     // Example 2: Custom stock selection
-    const customStocks = selectPeriodStocks(2, 6, 15); // 2.5 year horizon
+    const customStocks = selectPeriodStocks(2, 0,15); // 2.5 year horizon
     const customResults = await executeTradingSimulation(
       5000, 
       2, 

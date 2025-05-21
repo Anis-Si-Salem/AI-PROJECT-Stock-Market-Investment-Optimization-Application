@@ -191,6 +191,7 @@ function calcMomentum(stock, shortTerm = false) {
 }
 
 function calculateHeuristics(stock, marketData = null) {
+    console.log(stock)
     const symbol = stock.symbol;
 
     // --- Step 1: Normalize All Inputs ---
@@ -239,7 +240,9 @@ function calculateHeuristics(stock, marketData = null) {
     }
 
     // VaR/CVaR: Convert risk to safety score [0,1]
-    const [varRisk, cvarRisk] = getVarAndCVar(stock);
+   
+    let Var = getVarAndCVar(stock);
+    const varRisk = Var.var, cvarRisk = Var.cvar
     const varSafety = Math.max(0, Math.min(1 + varRisk / 0.3, 1)); // max VaR = -30%
     const cvarSafety = Math.max(0, Math.min(1 + cvarRisk / 0.5, 1)); // max CVaR = -50%
 

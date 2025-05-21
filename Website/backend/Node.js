@@ -113,7 +113,7 @@ function setNodes(expansion, history, short = false, sellatonce = false, portfol
 
     const nodes = [baseNode];
     let prevNodes = [baseNode];
-
+    console.log(history)
     for (const stockInfo of expansion) {
         const stockId = stockInfo.symbol;
         const stockHeuristic = calculateHeuristics(history[stockId]);

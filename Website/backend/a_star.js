@@ -1,7 +1,11 @@
 import { setNodes } from "./Node";
 import MaxHeap from "./MaxHeap";
+import { evaluate } from "./eval";
 
 
+const normalize = (val)=>{
+    return 1 - Math.exp((-1) * val)
+}
 /**
  * A* search algorithm to find a goal node based on heuristic + cost evaluation.
  *
