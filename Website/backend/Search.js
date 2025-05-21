@@ -1,4 +1,3 @@
-
 import { setNodes } from "./Node";
 import Stocks from "./PortfolioClass";
 
