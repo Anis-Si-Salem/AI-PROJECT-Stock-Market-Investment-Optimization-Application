@@ -140,7 +140,7 @@
   </footer>
     <div id="app"></div>
     <footer></footer>
-    <script type="module" src="src/main.js">
+    <!-- <script type="module" src="src/main.js">
       async function fetchClosingPrices(startDate, endDate, symbols) {
   const start = new Date(startDate);
   const end = new Date(endDate);
@@ -193,8 +193,62 @@ fetchClosingPrices('2023-01-01', '2023-01-07', ['AAPL', 'MSFT', 'TSLA'])
     console.log('Final closing prices data:', data);
   });
       
-    </script>
+    </script> -->
 
+    <script>
+async function fetchStockHistory(startDate, endDate, symbols) {
+  const API_KEY = 'h7ZyUhBsyk1VdFMw3iigWFcuvWP0aR7O'; 
+  const results = {};
+
+  for (const symbol of symbols) {
+    try {
+      console.log(`Fetching ${symbol}...`);
+      
+      const response = await fetch(
+        `https://financialmodelingprep.com/api/v3/historical-price-full/${symbol}?from=${startDate}&to=${endDate}&apikey=${API_KEY}`
+      );
+      
+      const data = await response.json();
+
+      if (data['Error Message']) {
+        console.error(`Error for ${symbol}:`, data['Error Message']);
+        results[symbol] = { error: data['Error Message'] };
+        continue;
+      }
+
+      if (!data.historical || data.historical.length === 0) {
+        console.log(`No data found for ${symbol} in date range`);
+        results[symbol] = [];
+        continue;
+      }
+
+
+      results[symbol] = data.historical
+        .sort((a, b) => new Date(a.date) - new Date(b.date))
+        .map(day => day.close);
+
+    } catch (error) {
+      console.error(`Failed to fetch ${symbol}:`, error.message);
+      results[symbol] = { error: error.message };
+    }
+
+    await new Promise(resolve => setTimeout(resolve, 1000));
+  }
+
+  console.log('Final Results:', results);
+  return results;
+}
+
+fetchStockHistory('2023-01-01', '2023-03-31', ['AAPL', 'MSFT', 'TSLA'])
+  .then(data => {
+    // Data structure will be:
+    // {
+    //   "AAPL": [72.71, 72.00, 72.58, ...],
+    //   "MSFT": [..., ..., ...],
+    //   "TSLA": [..., ..., ...]
+    // }
+  });
+    </script>
   </body>
   
 
